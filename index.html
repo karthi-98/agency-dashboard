@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#242422">
+  <meta name="description" content="Spark Pixel Team — an agency sales dashboard concept.">
+  <title>Spark Pixel — Overview</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ececea'/%3E%3Cpath d='M13.2 9h10.6l-1.9 3.7h-8.1c-.9 0-1.2 1.2-.4 1.6l.6.1h6l-1.2 2.3H13c-3.3 0-4.7-3.9-2.7-6.2.7-.9 1.7-1.5 2.9-1.5Zm-1.3 9.5h9.4l-1.9 4.3H9.9Z' fill='%23111'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="icons.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to dashboard</a>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <button class="workspace" type="button" data-toast="Workspace switching is not part of this mockup">
+        <span class="workspace-logo" aria-hidden="true"><svg viewBox="0 0 34 34"><path d="M14 9.5h11.2l-2 3.9h-8.6c-1 0-1.3 1.3-.4 1.7l.6.1h6.4l-1.3 2.4h-6c-3.5 0-5-4.1-2.9-6.6.8-.9 1.8-1.5 3-1.5Zm-1.4 10.1h10l-2 4.6h-10Z"/></svg></span>
+        <span class="workspace-text"><small>Agency</small><strong>Spark Pixel Team</strong></span>
+        <i data-icon="unfold" class="workspace-chevron"></i>
+      </button>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <p class="nav-label">Main Menu</p>
+          <a class="nav-item active" href="#" aria-current="page"><i data-icon="home"></i><span>Dashboard</span></a>
+          <a class="nav-item" href="#"><i data-icon="products"></i><span>Products</span></a>
+          <a class="nav-item" href="#"><i data-icon="transactions"></i><span>Transactions</span></a>
+          <a class="nav-item" href="#"><i data-icon="reports"></i><span>Reports &amp; Analytics</span></a>
+          <a class="nav-item" href="#"><i data-icon="messages"></i><span>Messages</span></a>
+          <a class="nav-item" href="#"><i data-icon="team"></i><span>Team Performance</span></a>
+          <a class="nav-item" href="#"><i data-icon="campaigns"></i><span>Campaigns</span></a>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Customers</p>
+          <a class="nav-item" href="#"><i data-icon="customers"></i><span>Customer List</span></a>
+          <a class="nav-item" href="#"><i data-icon="channels"></i><span>Channels</span></a>
+          <a class="nav-item" href="#"><i data-icon="orders"></i><span>Order Management</span></a>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Management</p>
+          <a class="nav-item" href="#"><i data-icon="roles"></i><span>Roles &amp; Permissions</span></a>
+          <a class="nav-item" href="#"><i data-icon="billing"></i><span>Billing &amp; Subscription</span></a>
+          <a class="nav-item" href="#"><i data-icon="integrations"></i><span>Integrations</span></a>
+        </div>
+        <div class="nav-group">
+          <p class="nav-label">Settings</p>
+          <a class="nav-item" href="#"><i data-icon="support"></i><span>Customer Support</span></a>
+          <a class="nav-item" href="#"><i data-icon="help"></i><span>Help Center</span></a>
+          <a class="nav-item" href="#"><i data-icon="settings"></i><span>System Settings</span></a>
+        </div>
+      </nav>
+      <div class="sidebar-foot">
+        <button class="profile" type="button" data-toast="Signed in as Salung Prastyo">
+          <span class="avatar"><img src="assets/avatar.jpg" alt=""><span class="presence" aria-hidden="true"></span></span>
+          <span class="profile-text"><strong>Salung Prastyo</strong><small>Pro Plan</small></span>
+          <i data-icon="chevronDown"></i>
+        </button>
+      </div>
+    </aside>
+    <button class="sidebar-backdrop" type="button" aria-label="Close navigation" tabindex="-1"></button>
+
+    <main class="main" id="main" tabindex="-1">
+      <header class="topbar">
+        <div class="topbar-start">
+          <button class="icon-button menu-button" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><i data-icon="menu"></i></button>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="#">Dashboard</a><i data-icon="chevronRight"></i><span aria-current="page">Overview</span></nav>
+        </div>
+        <div class="topbar-end">
+          <label class="search">
+            <i data-icon="search"></i>
+            <input id="global-search" type="search" placeholder="Search..." aria-label="Search (Command K)" autocomplete="off">
+            <span class="kbd-group" aria-hidden="true"><kbd><i data-icon="command"></i></kbd><kbd>K</kbd></span>
+          </label>
+          <button class="icon-button" type="button" aria-label="Notifications" data-toast="You're all caught up"><i data-icon="bell"></i></button>
+          <button class="icon-button" type="button" aria-label="Inbox" data-toast="No new messages in your inbox"><i data-icon="inbox"></i></button>
+          <button class="topbar-avatar" type="button" aria-label="Account" data-toast="Signed in as Salung Prastyo"><img src="assets/avatar.jpg" alt=""></button>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="page-head">
+          <h1>Welcome back, Salung</h1>
+          <div class="page-actions">
+            <div class="segmented-control">
+              <button class="segment" type="button" id="period-button" aria-haspopup="listbox" aria-expanded="false"><span id="period-label">Daily</span><i data-icon="chevronDown"></i></button>
+              <button class="segment" type="button" id="date-button" aria-haspopup="dialog" aria-expanded="false" aria-controls="date-picker"><i data-icon="calendar"></i><span id="date-label">6 Nov 2025</span></button>
+              <div class="menu date-picker" id="date-picker" role="dialog" aria-label="Choose report date" hidden>
+                <div class="dp-head">
+                  <button class="dp-nav" type="button" data-step="-1" aria-label="Previous month"><i data-icon="chevronRight" class="flip"></i></button>
+                  <p class="dp-title" id="dp-title" aria-live="polite"></p>
+                  <button class="dp-nav" type="button" data-step="1" aria-label="Next month"><i data-icon="chevronRight"></i></button>
+                </div>
+                <div class="dp-grid" role="grid" aria-labelledby="dp-title">
+                  <div class="dp-weekdays" role="row"><span role="columnheader" aria-label="Monday">Mo</span><span role="columnheader" aria-label="Tuesday">Tu</span><span role="columnheader" aria-label="Wednesday">We</span><span role="columnheader" aria-label="Thursday">Th</span><span role="columnheader" aria-label="Friday">Fr</span><span role="columnheader" aria-label="Saturday">Sa</span><span role="columnheader" aria-label="Sunday">Su</span></div>
+                  <div class="dp-days" id="dp-days"></div>
+                </div>
+                <div class="dp-foot">
+                  <p class="dp-selected" id="dp-selected"></p>
+                  <button class="dp-today" type="button" id="dp-today">Today</button>
+                </div>
+              </div>
+              <div class="menu period-menu" id="period-menu" role="listbox" aria-label="Report period" hidden>
+                <button class="menu-item" role="option" aria-selected="true" data-period="Daily">Daily<i data-icon="check"></i></button>
+                <button class="menu-item" role="option" aria-selected="false" data-period="Weekly">Weekly<i data-icon="check"></i></button>
+                <button class="menu-item" role="option" aria-selected="false" data-period="Monthly">Monthly<i data-icon="check"></i></button>
+              </div>
+            </div>
+            <button class="button primary" type="button" id="export-csv"><i data-icon="file"></i>Export CSV</button>
+          </div>
+        </div>
+
+        <section class="kpis" aria-label="Key metrics" id="kpis"></section>
+
+        <div class="charts">
+          <section class="card sales-card" aria-labelledby="sales-title">
+            <header class="card-head">
+              <h2 id="sales-title">Sales Trend</h2><i data-icon="info" class="info-icon" title="New and existing users per period"></i>
+              <button class="more-button" type="button" aria-label="Sales trend options" data-toast="Chart options are not part of this mockup"><i data-icon="more"></i></button>
+            </header>
+            <div class="card-body sales-body">
+              <div class="sales-toolbar">
+                <p class="sales-total"><span>Total Revenue :</span><strong id="sales-total">$20,320</strong></p>
+                <ul class="legend">
+                  <li><span class="legend-dot"></span>New User</li>
+                  <li><span class="legend-dot orange"></span>Existing User</li>
+                </ul>
+                <div class="tabs" role="tablist" aria-label="Sales trend range">
+                  <span class="tab-indicator" aria-hidden="true"></span>
+                  <button class="tab" role="tab" aria-selected="false" data-range="weekly">Weekly</button>
+                  <button class="tab" role="tab" aria-selected="true" data-range="monthly">Monthly</button>
+                  <button class="tab" role="tab" aria-selected="false" data-range="yearly">Yearly</button>
+                </div>
+              </div>
+              <div class="sales-chart" id="sales-chart" tabindex="0" role="group" aria-roledescription="interactive chart" aria-label="Sales trend. Use the left and right arrow keys to inspect each column.">
+                <ol class="y-axis" aria-hidden="true"><li>60k</li><li>50k</li><li>40k</li><li>30k</li><li>20k</li><li>10k</li><li>0k</li></ol>
+                <svg class="cells" id="cells" width="682" height="298" viewBox="0 0 682 298" aria-hidden="true"></svg>
+                <div class="crosshair" id="crosshair" aria-hidden="true"><span class="crosshair-dot"></span></div>
+                <div class="chart-tooltip" id="chart-tooltip" aria-hidden="true">
+                  <p class="tooltip-title" id="tooltip-title">Jun 2025</p>
+                  <p class="tooltip-row"><span class="legend-dot"></span>New User<strong id="tooltip-new">38k</strong></p>
+                  <p class="tooltip-row"><span class="legend-dot orange"></span>Existing User<strong id="tooltip-existing">18k</strong></p>
+                </div>
+                <ol class="x-axis" id="x-axis" aria-hidden="true"></ol>
+              </div>
+              <p class="sr-only" id="chart-live" aria-live="polite"></p>
+            </div>
+          </section>
+
+          <section class="card revenue-card" aria-labelledby="revenue-title">
+            <header class="card-head">
+              <h2 id="revenue-title">Revenue Breakdown</h2><i data-icon="info" class="info-icon" title="Revenue split by product category"></i>
+              <button class="more-button" type="button" aria-label="Revenue breakdown options" data-toast="Chart options are not part of this mockup"><i data-icon="more"></i></button>
+            </header>
+            <div class="card-body revenue-body">
+              <div class="revenue-head">
+                <div><p class="muted-label">Revenue by Category</p><p class="big-value">$20,320</p></div>
+                <button class="date-pill" type="button" data-toast="Date range picker is not part of this mockup"><i data-icon="calendar"></i>Jan 1 - Aug 30<i data-icon="chevronDown"></i></button>
+              </div>
+              <button class="ai-insight" type="button" data-toast="AI insight: Chairs drove 31% of revenue this period"><span class="ai-icon"><i data-icon="sparkles"></i></span><span>Get AI insight for better analysis</span><i data-icon="arrowRightCircle" class="solid-icon"></i></button>
+              <div class="bars" id="bars" role="img" aria-label="Revenue by category, 13 bars"></div>
+              <div class="bars-axis" aria-hidden="true"><span>1 Jan</span><span class="axis-line"></span><span>30 Jan 2025</span></div>
+            </div>
+          </section>
+        </div>
+
+        <section class="card table-card" aria-labelledby="table-title">
+          <header class="card-head">
+            <h2 id="table-title">Recent Transactions</h2><i data-icon="info" class="info-icon" title="Latest orders across all channels"></i>
+            <div class="table-tools">
+              <label class="table-search"><i data-icon="search"></i><input id="table-search" type="search" placeholder="Search transactions..." aria-label="Search transactions" autocomplete="off"></label>
+              <button class="button primary small" type="button" id="add-transaction"><i data-icon="plus"></i>Add Transaction</button>
+              <button class="more-button" type="button" aria-label="Table options" data-toast="Table options are not part of this mockup"><i data-icon="more"></i></button>
+            </div>
+          </header>
+          <div class="card-body table-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="col-check"><input type="checkbox" id="select-all" aria-label="Select all transactions"></th>
+                  <th class="col-id"><button class="sort" data-sort="id">ID<i class="sort-icon"></i></button></th>
+                  <th class="col-customer"><button class="sort" data-sort="customer">Customer<i class="sort-icon"></i></button></th>
+                  <th class="col-product"><button class="sort" data-sort="product">Product<i class="sort-icon"></i></button></th>
+                  <th class="col-status"><button class="sort" data-sort="status">Status<i class="sort-icon"></i></button></th>
+                  <th class="col-qty"><button class="sort" data-sort="qty">Qty<i class="sort-icon"></i></button></th>
+                  <th class="col-price"><button class="sort" data-sort="price">Unit Price<i class="sort-icon"></i></button></th>
+                  <th class="col-total"><button class="sort" data-sort="total">Total Revenue<i class="sort-icon"></i></button></th>
+                  <th class="col-actions">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+            <p class="table-empty" id="table-empty" hidden>No transactions match your search.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="menu row-menu" id="row-menu" role="menu" hidden>
+    <button class="menu-item" role="menuitem" data-row-action="view">View details</button>
+    <button class="menu-item" role="menuitem" data-row-action="copy">Copy ID</button>
+    <button class="menu-item" role="menuitem" data-row-action="refund">Mark as refunded</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
